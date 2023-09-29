@@ -16,3 +16,5 @@ function GetInfo(){
         document.getElementById("img" +(i+1).src) = "https://openweathermap.org/img/wn/" + data.list[i].weather[0].icon+".png";
     }
 }}
+
+.catch(err => alert("Something went wrong!"))
