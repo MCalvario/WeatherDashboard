@@ -1,0 +1,13 @@
+*{
+    color: rgb(7, 1, 1);
+    background: rgb(7, 200, 243);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#cityInput, #cityName, #inputContainer,button{
+    margin: 3px;
+padding:5px;
+text-align:center;
+font-size:20px;
+font-weight:bold;
+}
