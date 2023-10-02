@@ -9,17 +9,6 @@ function GetInfo() {
     .then(response => response.json())
     .then(data => {
     
-        //Getting the min and max values for each day
-        for(i = 0; i<5; i++){
-            document.getElementById("day" + (i+1) + "Min").innerHTML = "Min: " + Number(data.list[i].main.temp_min - 273.15).toFixed(1)+ "°";
-            //Number(1.3450001).toFixed(2); // 1.35
-        }
-    
-        for(i = 0; i<5; i++){
-            document.getElementById("day" + (i+1) + "Max").innerHTML = "Max: " + Number(data.list[i].main.temp_max - 273.15).toFixed(2) + "°";
-        }
-        
-    
         //Getting Weather Icons
          for(i = 0; i<5; i++){
             document.getElementById("img" + (i+1)).src = "http://openweathermap.org/img/wn/"+
@@ -33,11 +22,6 @@ function GetInfo() {
     })
     
     .catch(err => alert("Something Went Wrong: Try Checking Your Internet Coneciton"))
-    }
-    
-    function DefaultScreen(){
-        document.getElementById("cityInput").defaultValue = "London";
-        GetInfo();
     }
     
     

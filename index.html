@@ -2,60 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   
-  <title>Document</title>
+  <title>WeatherDashboard</title>
 
 </head>
 
-<body onload="DefaultScreen()">
-  <header class="header">
+<body>
+  <center>
     <h1>5 Days Weather Forecast</h1>
-  </header>
+</center>
 
+ <div class="container">
+      <div class="weather-input">
+        <h3>Enter a City Name</h3>
+        <input class="city-input" type="text" placeholder="E.g., New York, London, Tokyo">
+        <button class="search-btn">Search</button>
+        <div class="separator"></div>
+        <button class="location-btn">Use Current Location</button>
+      </div>
 
-        <p id="inputContainer">City: <input type="text" id="cityInput"></p>
-        <button type="button" onclick="GetInfo()">Search...</button>        
-        <h2 id="cityName">---London---</h2>
+  <div class="weather-data">
+        <div class="current-weather">
+          <div class="details">
+            <h2>_______ ( ______ )</h2>
+            <h6>Temperature: __°C</h6>
+            <h6>Wind: __ M/S</h6>
+            <h6>Humidity: __%</h6>
+          </div>  
 
-
-  <div id = "weatherContainer">
-        <div id="iconsContainer">    
-            <div class = "icons">
-                <p class="weather" id="day1"></p>
-                <div class="image"><img src="dots.png" class="imgClass" id="img1"></div>
-                <p class="minValues" id="day1Min">Loading...</p>
-                <p class="maxValues" id="day1Max">Loading...</p>
-            </div>
-            <div class = "icons">
-                <p class="weather" id="day2"></p>
-                <div class="image"><img src="dots.png" class="imgClass" id="img2"></div>
-                <p class="minValues" id="day2Min">Loading...</p>
-                <p class="maxValues" id="day2Max">Loading...</p>
-            </div>
-            <div class = "icons">
-                <p class="weather" id="day3"></p>
-                <div class="image"><img src="dots.png" class="imgClass" id="img3"></div>
-                <p class="minValues" id="day3Min">Loading...</p>
-                <p class="maxValues" id="day3Max">Loading...</p>
-            </div>
-            <div class = "icons">
-                <p class="weather" id="day4"></p>
-                <div class="image"><img src="dots.png" class="imgClass" id="img4"></div>
-                <p class="minValues" id="day4Min">Loading...</p>
-                <p class="maxValues" id="day4Max">Loading...</p>
-            </div>
-            <div class = "icons">
-                <p class="weather" id="day5"></p>
-                <div class="image"><img src="dots.png" class="imgClass" id="img5"></div>
-                <p class="minValues" id="day5Min">Loading...</p>
-                <p class="maxValues" id="day5Max">Loading...</p>
-            </div>
         </div>
+        <div class="days-forecast">
+          <h2>5-Day Forecast</h2>
+          <ul class="weather-cards">
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-
+            
+         
        <!--link js-->
        <script src="WeatherDashboard/script.js"></script>
 
