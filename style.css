@@ -8,7 +8,7 @@
 body {
   background: #fcfcfd;
 }
-
+/*title at the top of the page*/
 h1 {
     background: #5372F0;
     font-size: 2.5rem;
@@ -17,6 +17,7 @@ h1 {
     color: #fff;
   }
 
+/*left hand side container*/
   .container {
     display: flex;
     gap: 50px;
@@ -79,6 +80,7 @@ h1 {
     background: #5c636a;
   }
 
+  /*cards and current weather at the top*/
   .weather-data {
     width: 100%;
   }
@@ -137,6 +139,8 @@ h1 {
     max-width: 70px;
     margin: 5px 0 -12px 0;
   }
+
+  /*created to make the page shrink to size if needed*/
   @media (max-width: 1400px) {
     .weather-data .current-weather {
       padding: 20px;
