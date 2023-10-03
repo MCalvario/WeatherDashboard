@@ -9,11 +9,15 @@ To use this weather dashboard application with form inputs, first, search for a 
 
 
 # Live Site Application
-[Link to Live Site]
-[Screenshot of application]
-[Link to updated portfolio]
+[Link to Live Site] https://mcalvario.github.io/WeatherDashboard/
+[Screenshot of application] ![Alt text](weather.png)
+[Link to updated portfolio] https://mcalvario.github.io/Professional-Portfolio/
 
 # Credits
+Openweathermap.org:  https://openweathermap.org/weather-conditions
+Geeksforgeeks:  https://www.geeksforgeeks.org/weather-app-using-vanilla-javascript/
+Youtube:  https://www.youtube.com/watch?v=w0VEOghdMpQ
+
 
 # License
 Copyright (c) [2023] [Weather-Dashboard]
